@@ -27,12 +27,10 @@
     <div class="bg-light border-right" id="sidebar-wrapper">
         <div class="sidebar-heading">Add New Listing</div>
         <div class="list-group list-group-flush">
-            <a href="#" class="list-group-item list-group-item-action bg-light">1. Year and Make</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light">2. Shortcuts</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
+            <a href="#" class="list-group-item list-group-item-action bg-light" id="side-bar-basic">Basic Information</a>
+            <a href="#" class="list-group-item list-group-item-action bg-light" id="side-bar-detailed">Detailed Information</a>
+            <!--<a href="#" class="list-group-item list-group-item-action bg-light" id="side-bar-finish">Finish</a>-->
+
         </div>
     </div>
     <!-- /#sidebar-wrapper -->
@@ -42,11 +40,6 @@
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
             <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
@@ -69,12 +62,75 @@
         </nav>
 
         <div class="container-fluid">
-            <h1 class="mt-4">Simple Sidebar</h1>
-            <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on
-                larger screens. When toggled using the button below, the menu will change.</p>
-            <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>. The top navbar is
-                optional, and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID which
-                will toggle the menu when clicked.</p>
+            <div class="container-fluid" id="basic-info-content">
+                <h3>Tell us about your vehicle:</h3>
+                <!--String year = "";-->
+                <!--String make = "";-->
+                <!--String model = "";-->
+                <!--String trim = "";-->
+                <!--String transmission = "";-->
+                <!--String engine = "";-->
+                <!--String drive_type = "";-->
+                <ul class="navbar-nav">
+                    <li>
+                        <p>Year:</p>
+                    </li>
+                    <li>
+                        <p>Make:</p>
+                    </li>
+                    <li>
+                        <p>Model:</p>
+                    </li>
+                    <li>
+                        <p>Trim:</p>
+                    </li>
+                    <li>
+                        <p>Transmission:</p>
+                    </li>
+                    <li>
+                        <p>Engine:</p>
+                    </li>
+                    <li>
+                        <p>Drive-Type:</p>
+                    </li>
+
+                </ul>
+
+
+            </div>
+            <div class="container" id="detailed-info-content">
+                <h3>Tell us more about your vehicle:</h3>
+
+                <!--String VIN = "";-->
+                <!--int model = -1;-->
+                <!--int mileage = -1;-->
+                <!--int price = -1;-->
+                <!--String color = "";-->
+                <!--String user_name = "";-->
+                <ul class="navbar-nav">
+                    <li>
+                        <p>VIN:</p>
+                    </li>
+                    <li>
+                        <p>Mileage:</p>
+                    </li>
+                    <li>
+                        <p>Color:</p>
+                    </li>
+                    <li>
+                        <p>Price:</p>
+                    </li>
+                    <li>
+                        <p>Contact:</p>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <a href="#" class="btn btn-info" id="create-new-listing">Create New Listing</a>
+                    </li>
+                </ul>
+
+            </div>
+
         </div>
     </div>
     <!-- /#page-content-wrapper -->
@@ -85,14 +141,9 @@
 <!-- Bootstrap core JavaScript -->
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/addcar.js"></script>
 
-<!-- Menu Toggle Script -->
-<script>
-    $("#menu-toggle").click(function (e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-</script>
+
 
 </body>
 
