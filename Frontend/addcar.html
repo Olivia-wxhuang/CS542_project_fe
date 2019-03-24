@@ -8,14 +8,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>WPI Cars - User Account</title>
+    <title>WPI Cars - Add New Listing</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/simple-sidebar.css" rel="stylesheet">
-    <link href="css/user.css" rel="stylesheet">
+    <link href="css/addcar.css" rel="stylesheet">
 
 </head>
 
@@ -25,13 +25,12 @@
 
     <!-- Sidebar -->
     <div class="bg-light border-right" id="sidebar-wrapper">
-        <div class="sidebar-heading">User Account</div>
+        <div class="sidebar-heading">Add New Listing</div>
         <div class="list-group list-group-flush">
-            <a href="#" class="list-group-item list-group-item-action bg-light" id="side-bar-my-account">My Information</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light" id="side-bar-my-listings">My
-                Listings</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light" id="side-bar-my-watchlist">My
-                Watchlist</a>
+            <a href="#" class="list-group-item list-group-item-action bg-light" id="side-bar-basic">Basic Information</a>
+            <a href="#" class="list-group-item list-group-item-action bg-light" id="side-bar-detailed">Detailed Information</a>
+            <!--<a href="#" class="list-group-item list-group-item-action bg-light" id="side-bar-finish">Finish</a>-->
+
         </div>
     </div>
     <!-- /#sidebar-wrapper -->
@@ -50,7 +49,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Username Placeholder
+                            Username placeholder
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="user.html">My Account</a>
@@ -63,65 +62,70 @@
         </nav>
 
         <div class="container-fluid">
-            <div class="container-fluid" id="account-details-content">
+            <div class="container-fluid" id="basic-info-content">
+                <h3>Tell us about your vehicle:</h3>
+                <!--String year = "";-->
+                <!--String make = "";-->
+                <!--String model = "";-->
+                <!--String trim = "";-->
+                <!--String transmission = "";-->
+                <!--String engine = "";-->
+                <!--String drive_type = "";-->
                 <ul class="navbar-nav">
                     <li>
-                        <p>User ID: [placeholder]</p>
+                        <p>Year:</p>
                     </li>
                     <li>
-                        <p>User name: [placeholder]</p>
+                        <p>Make:</p>
                     </li>
                     <li>
-                        <p>Department: [placeholder]</p>
+                        <p>Model:</p>
                     </li>
                     <li>
-                        <p>Rating: 3.0/5.0</p>
+                        <p>Trim:</p>
+                    </li>
+                    <li>
+                        <p>Transmission:</p>
+                    </li>
+                    <li>
+                        <p>Engine:</p>
+                    </li>
+                    <li>
+                        <p>Drive-Type:</p>
+                    </li>
+
+                </ul>
+
+
+            </div>
+            <div class="container" id="detailed-info-content">
+                <h3>Tell us more about your vehicle:</h3>
+
+                <!--String VIN = "";-->
+                <!--int model = -1;-->
+                <!--int mileage = -1;-->
+                <!--int price = -1;-->
+                <!--String color = "";-->
+                <!--String user_name = "";-->
+                <ul class="navbar-nav">
+                    <li>
+                        <p>VIN:</p>
+                    </li>
+                    <li>
+                        <p>Mileage:</p>
+                    </li>
+                    <li>
+                        <p>Color:</p>
+                    </li>
+                    <li>
+                        <p>Price:</p>
+                    </li>
+                    <li>
+                        <p>Contact:</p>
                     </li>
                     <li class="dropdown-divider"></li>
                     <li>
-                        <a href="#" class="btn btn-info" id="reset-password">Reset Password</a>
-                    </li>
-                </ul>
-
-
-            </div>
-            <div class="container" id="list-container">
-                <p>Container of selling list placeholder.</p>
-                <ul class="navbar-nav">
-                    <li class="list-container-item">
-                        <a href="#">Car no.1</a>
-                        <a href="#" class="btn btn-primary">Mark as Sold</a>
-                    </li>
-                    <li class="list-container-item">
-                        <a href="#">Car no.2</a>
-                        <a href="#" class="btn btn-primary">Mark as Sold</a>
-                    </li>
-                    <li class="list-container-item">
-                        <a href="#">Car no.3</a>
-                        <a href="#" class="btn btn-primary">Mark as Sold</a>
-                    </li>
-                    <div class="dropdown-divider"></div>
-                    <li class="list-container-item">
-                        <a href="addcar.html" class="button btn btn-info" id="add-new-listing">Add New Listing</a>
-                    </li>
-                </ul>
-
-            </div>
-
-            <div class="container" id="watchlist-container">
-                <p>Container of watch list placeholder.</p>
-                <ul class="navbar-nav">
-                    <li class="list-container-item">
-                        <a href="#">Car no.1</a>
-                        <a href="#" class="btn btn-danger">Remove</a>
-                    </li>
-                    <li class="list-container-item">
-                        <a href="#">Car no.2</a>
-                        <a href="#" class="btn btn-danger">Remove</a>
-                    </li>
-                    <li class="list-container-item">
-                        <a href="#">Car no.3</a>
-                        <a href="#" class="btn btn-danger">Remove</a>
+                        <a href="#" class="btn btn-info" id="create-new-listing">Create New Listing</a>
                     </li>
                 </ul>
 
@@ -137,7 +141,8 @@
 <!-- Bootstrap core JavaScript -->
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/user.js"></script>
+<script src="js/addcar.js"></script>
+
 
 
 </body>
