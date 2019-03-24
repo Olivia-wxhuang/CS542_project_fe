@@ -1,0 +1,9 @@
+#list-container{
+    display: none;
+    margin: 50px;
+
+}
+#account-details-content{
+    display: block;
+    margin: 50px;
+}
